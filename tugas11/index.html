@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Football Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="h1">Football Gallery</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <!-- Gambar 1 -->
+        <div class="col">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="ramos.jpg" alt="image" class="image" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar 2 -->
+        <div class="col">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="cristiano.jpg" alt="image" class="image" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar 3 -->
+        <div class="col">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="adriano.webp" alt="image" class="image" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar 4 -->
+        <div class="col">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="henry.jpg" alt="image" class="image" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar 5 -->
+        <div class="col">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="fight.webp" alt="image" class="image" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar 6 -->
+        <div class="col">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="gerrad.png" alt="image" class="image" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar 7 -->
+        <div class="col">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="carrick.webp" alt="image" class="image" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar 8 -->
+        <div class="col">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="vidic.jpg" alt="image" class="image" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar 9 -->
+        <div class="col">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="cole.jpeg" alt="image" class="image" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar 10 -->
+        <div class="col">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="vidic2.jpg" alt="image" class="image" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar 11 -->
+        <div class="col">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="rooney.jpg" alt="image" class="image" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Gambar  12 -->
+        <div class="col">
+          <div class="thumbnail">
+            <div class="img-container">
+              <img src="david.jpeg" alt="image" class="image" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      body {
+        background-color: #bed754; /* Warna latar belakang */
+      }
+
+      .container {
+        padding: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: #d0f288; /* Warna latar belakang */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+        border-radius: 10px; /* Membuat sudut lengkung */
+      }
+
+      .h1 {
+        font-size: 3rem;
+        font-style: italic;
+        padding: 2rem 0;
+        text-align: center;
+        color: #31304d; /* Warna teks judul */
+      }
+
+      .thumbnail {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px; /* Membuat sudut gambar menjadi lengkung */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk gambar */
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .thumbnail img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .thumbnail:hover {
+        transform: scale(1.05); /* Efek scaling saat gambar dihover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan sedikit lebih besar saat dihover */
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+
+        transition: opacity 0.3s ease-in-out;
+        background-color: #333333;
+      }
+
+      .img-container:hover .overlay {
+        opacity: 1;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
